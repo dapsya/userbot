@@ -3,7 +3,7 @@
   "description": "[Senja-Userbot] Userbot Hanya Untuk Bersenang - Senang",
   "logo": "https://telegra.ph/file/0828f5b91c5cc19e8d70b.jpg",
   "keywords": ["telegram", "userbot", "Senja-Userbot", "modular", "python"],
-  "repository": "https://github.com/inisenja/Senja-Userbot",
+  "repository": "https://github.com/dapsya/userbot",
   "stack": "container",
   "env": {
     "API_KEY": {
