@@ -8,6 +8,7 @@ except ImportError:
 
 from sqlalchemy import Column, Numeric, UnicodeText
 
+
 class Fbtpm(BASE):
 
     __tablename__ = "fbtpm"
@@ -26,7 +27,9 @@ class Fbtpm(BASE):
 
         self.f_mesg_id = f_mesg_id
 
+
 Fbtpm.__table__.create(checkfirst=True)
+
 
 def get_btpm(keyword):
 
@@ -38,6 +41,7 @@ def get_btpm(keyword):
 
         SESSION.close()
 
+
 def get_fbtpm():
 
     try:
@@ -47,6 +51,7 @@ def get_fbtpm():
     finally:
 
         SESSION.close()
+
 
 def add_btpm(keyword, reply, f_mesg_id):
 
@@ -77,6 +82,7 @@ def add_btpm(keyword, reply, f_mesg_id):
         SESSION.commit()
 
         return False
+
 
 def remove_btpm(keyword):
 

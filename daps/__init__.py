@@ -74,7 +74,8 @@ logging.basicConfig(
 logging.getLogger("asyncio").setLevel(logging.ERROR)
 logging.getLogger("pytgcalls").setLevel(logging.ERROR)
 logging.getLogger("telethon.network.mtprotosender").setLevel(logging.ERROR)
-logging.getLogger("telethon.network.connection.connection").setLevel(logging.ERROR)
+logging.getLogger(
+    "telethon.network.connection.connection").setLevel(logging.ERROR)
 LOGS = getLogger(__name__)
 
 if version_info[0] < 3 or version_info[1] < 8:
@@ -181,7 +182,9 @@ GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
-UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/inisenja/Senja-Userbot.git")
+UPSTREAM_REPO_URL = os.environ.get(
+    "UPSTREAM_REPO_URL",
+    "https://github.com/inisenja/Senja-Userbot.git")
 
 # Custom Name Sticker Pack
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
@@ -597,12 +600,12 @@ with bot:
         botusername = asst.username
         logo = ALIVE_LOGO
         logoyins = random.choice(
-                [
-                    "https://telegra.ph/file/97e7d96e55fb8316574aa.jpg",
-                    "https://telegra.ph/file/97e7d96e55fb8316574aa.jpg",
-                    "https://telegra.ph/file/97e7d96e55fb8316574aa.jpg",
-                    "https://telegra.ph/file/97e7d96e55fb8316574aa.jpg",
-                ]
+            [
+                "https://telegra.ph/file/97e7d96e55fb8316574aa.jpg",
+                "https://telegra.ph/file/97e7d96e55fb8316574aa.jpg",
+                "https://telegra.ph/file/97e7d96e55fb8316574aa.jpg",
+                "https://telegra.ph/file/97e7d96e55fb8316574aa.jpg",
+            ]
         )
         cmd = CMD_HANDLER
         tgbotusername = BOT_USERNAME
@@ -773,14 +776,15 @@ with bot:
                                 url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
                         ],
                         [
-                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/SenjaaSupport"),
+                            custom.Button.url(
+                                "Sᴜᴘᴘᴏʀᴛ",
+                                url="https://t.me/SenjaaSupport"),
                         ],
                     ],
                     link_preview=False,
                 )
             elif query.startswith("lang"):
                 languages = get_languages()
-                text = "List Of Available Languages.",
                 tutud = [
                     Button.inline(
                         f"{languages[yins]['asli']} [{yins.lower()}]",
@@ -791,7 +795,8 @@ with bot:
                 buttons = list(zip(tutud[::2], tutud[1::2]))
                 if len(tutud) % 2 == 1:
                     buttons.append((tutud[-1],))
-                buttons.append([custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
+                buttons.append(
+                    [custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
                 result = builder.article(
                     title="Lang",
                     description="Lang Senja - Userbot",

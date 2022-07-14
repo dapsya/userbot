@@ -94,7 +94,7 @@ async def gben(userbot):
     else:
         gbun = await edit_or_reply(userbot, "**Memproses Global Banned Buat Pengguna Ke Kontol**!!")
     me = await userbot.client.get_me()
-    await gbun.edit(f"**Sabar Kontol Banned Akan Segera Aktif**!!!") 
+    await gbun.edit(f"**Sabar Kontol Banned Akan Segera Aktif**!!!")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -160,7 +160,7 @@ async def gunben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        ungbun = await dc.reply("**Proses Membatalkan Global Banned Sedang Di Proses**") 
+        ungbun = await dc.reply("**Proses Membatalkan Global Banned Sedang Di Proses**")
     else:
         ungbun = await edit_or_reply(userbot, "**Membatalkan Perintah Global Banned**")
     me = await userbot.client.get_me()

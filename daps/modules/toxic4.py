@@ -3,7 +3,7 @@
 # KONTOLLLL
 
 from platform import uname
-from userbot import bot, ALIVE_NAME, CMD_HELP, CMD_HANDLER, bot
+from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
 
 # ================= CONSTANT =================
@@ -24,7 +24,6 @@ async def typewriter(typew):
     await typew.edit("**GAUSAH SOK KERAS DEH**")
     sleep(1.5)
     await typew.edit("**GA KEREN LO BEGITU NGENTOT**")
-
 
 
 @register(outgoing=True, pattern=r"^\.kont(?: |$)(.*)")
@@ -135,6 +134,7 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("**SEMOGA CEPET SADAR YA HAHAHAHA**")
 
+
 @register(outgoing=True, pattern='^.ngentot(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -212,7 +212,6 @@ async def typewriter(typew):
     await typew.edit("**HAHAHAHA**")
 
 # Create by myself @localheart
-
 
 
 CMD_HELP.update(

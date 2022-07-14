@@ -13,10 +13,6 @@ from pytgcalls.types.input_stream.quality import (
     LowQualityVideo,
     MediumQualityVideo,
 )
-from pytgcalls.exceptions import (
-    NoActiveGroupCall,
-    NotInGroupCallError
-)
 from pytgcalls.exceptions import AlreadyJoinedError
 from telethon.tl import types
 from telethon.utils import get_display_name
@@ -478,6 +474,7 @@ async def vc_playlist(event):
 # @mrismanaziz
 # Man-Userbot
 
+
 @hiro_cmd(pattern="joinvc(?: |$)(.*)")
 @register(pattern=r"^\.joinvcs(?: |$)(.*)", sudo=True)
 async def _(event):
@@ -537,7 +534,6 @@ async def vc_end(event):
             )
         except Exception as e:
             await Man.edit(f"**INFO:** `{e}`")
-
 
 
 @call_py.on_stream_end()
