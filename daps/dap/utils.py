@@ -19,7 +19,7 @@ from telethon.tl.functions.channels import CreateChannelRequest, EditPhotoReques
 from telethon.tl.types import ChatPhotoEmpty, InputChatUploadedPhoto
 from telethon.utils import get_peer_id
 
-from AyiinXd import (
+from daps import (
     BOT_TOKEN,
     BOTLOG_CHATID,
     CMD_HELP,
@@ -57,8 +57,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="sᴇɴᴊᴀ-Usᴇʀʙᴏᴛ Lᴏɢs",
-                about="» Group log Created by: Senja-Userbot\n\n» Support : @SenjaSupport\n» Support : @iamsenja",
+                title="ᴅᴀᴘs-ᴜsᴇʀʙᴏʏ Lᴏɢs",
+                about="» Group log Created by: ᴅᴀᴘs-ᴜsᴇʀʙᴏʏ\n\n» Support : @privatedap\n» Support : @bombleebas",
                 megagroup=True,
             ),
         )
@@ -76,7 +76,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/0828f5b91c5cc19e8d70b.jpg", "photoyins.jpg"
+            "https://telegra.ph/file/f798bfa928284f3c4d90ae.jpg", "photoyins.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -105,7 +105,7 @@ async def autobot():
     if who.username:
         username = f"{who.username}_bot"
     else:
-        username = f"senja{(str(who.id))[5:]}bot"
+        username = f"daps{(str(who.id))[5:]}bot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
