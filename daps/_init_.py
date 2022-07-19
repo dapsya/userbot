@@ -17,7 +17,7 @@ import time
 from asyncio import get_event_loop
 from base64 import b64decode
 from distutils.util import strtobool as sb
-from logging import DEBUG, INFO, basicConfig, getLogger
+from logging import getLogger
 from math import ceil
 from pathlib import Path
 from sys import version_info
@@ -26,7 +26,6 @@ from dotenv import load_dotenv
 from platform import python_version
 from git import Repo
 from pylast import LastFMNetwork, md5
-from pySmartDL import SmartDL
 from pytgcalls import PyTgCalls
 from requests import get
 from telethon import Button, __version__ as vsc
