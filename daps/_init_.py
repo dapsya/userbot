@@ -295,8 +295,8 @@ while 0 < 6:
 
 del _BLACKLIST
 
-ch = str(b64decode("QGJvbWJsZWViYXM="))[2:15]
-gc = str(b64decode("QHByaXZhdGVkYXA="))[2:16]
+ch = str(b64decode("QGJvbWJsZWViYXM="))[2:13]
+gc = str(b64decode("QHByaXZhdGVkYXA="))[2:13]
 
 while 0 < 6:
     _WHITELIST = get(
