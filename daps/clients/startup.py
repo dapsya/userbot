@@ -35,7 +35,6 @@ from Daps import (
     STRING_9,
     STRING_10,
     STRING_SESSION,
-    blacklistdap,
     bot,
     call_py,
     tgbot,
@@ -245,49 +244,13 @@ def multidaps():
         failed += 1
     if not STRING_10:
         failed += 1
-    return failed# Man - UserBot
+    return failed  # Man - UserBot
 # Copyright (c) 2022 Man-Userbot
 # Credits: @mrismanaziz || https://github.com/mrismanaziz
 #
 # This file is a part of < https://github.com/mrismanaziz/Man-Userbot/ >
 # t.me/SharingUserbot & t.me/Lunatic0de
 
-import sys
-
-from telethon.utils import get_peer_id
-
-from Daps import BOT_TOKEN
-from Daps import BOT_VER as version
-from Daps import (
-    DEFAULT,
-    DEVS,
-    LOGS,
-    LOOP,
-    DAPS2,
-    DAPS3,
-    DAPS4,
-    DAPS5,
-    DAPS6,
-    DAPS7,
-    DAPS8,
-    DAPS9,
-    DAPS10,
-    STRING_2,
-    STRING_3,
-    STRING_4,
-    STRING_5,
-    STRING_6,
-    STRING_7,
-    STRING_8,
-    STRING_9,
-    STRING_10,
-    STRING_SESSION,
-    blacklistdap,
-    bot,
-    call_py,
-    tgbot,
-)
-from Daps.modules.gcast import GCAST_BLACKLIST as GBL
 
 EOL = "EOL\nDaps-UserBot v{}, Copyright © 2021-2022 Dap• <https://github.com/dapsya>"
 MSG_BLACKLIST = "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOT {} GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\ndaps_userBot v{}, Copyright © 2021-2022 Daps• <https://github.com/dapsya>"
