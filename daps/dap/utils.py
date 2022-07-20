@@ -42,7 +42,7 @@ else:
 
 
 async def autopilot():
-    LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA")
+    LOGS.info("TUNGGU AJA LATIHAN SABAR YA AJG")
     if BOTLOG_CHATID and str(BOTLOG_CHATID).startswith("-100"):
         return
     y = []  # To Refresh private ids
@@ -167,7 +167,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Iamsenja ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @itsdaps ✨"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -211,7 +211,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Iamsenja ✨"
+            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @itsdaps ✨"
         )
         await bot.send_message(
             BOTLOG_CHATID,
