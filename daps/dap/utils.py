@@ -19,7 +19,7 @@ from telethon.tl.functions.channels import CreateChannelRequest, EditPhotoReques
 from telethon.tl.types import ChatPhotoEmpty, InputChatUploadedPhoto
 from telethon.utils import get_peer_id
 
-from daps import (
+from AyiinXd import (
     BOT_TOKEN,
     BOTLOG_CHATID,
     CMD_HELP,
