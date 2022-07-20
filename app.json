@@ -1,21 +1,21 @@
 {
-  "name": "⋆ 𝙎𝙚𝙣𝙟𝙖-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 ⋆",
+  "name": "⋆ ᴅᴀᴘs ᴜsᴇʀʙᴏʏ ⋆",
   "description": "[Senja-Userbot] Userbot Hanya Untuk Bersenang - Senang",
-  "logo": "https://telegra.ph/file/0828f5b91c5cc19e8d70b.jpg",
-  "keywords": ["telegram", "userbot", "Senja-Userbot", "modular", "python"],
+  "logo": "https://telegra.ph/file/798bfa928284f3c4d90ae.jpg",
+  "keywords": ["telegram", "userbot", "Daps userboy", "modular", "python"],
   "repository": "https://github.com/dapsya/userbot",
   "stack": "container",
   "env": {
     "API_KEY": {
-      "description": "Dapatkan API KEY di Grup » https://t.me/SenjaaSupport » Lalu ketik /get api atau di web my.telegram.org Masukan yg APP ID Telegram",
+      "description": "Dapatkan API KEY di Grup » https://t.me/privatedap » Lalu ketik /get api atau di web my.telegram.org Masukan yg APP ID Telegram",
       "required": true
     },
     "API_HASH": {
-      "description": "Dapatkan API Hash di Grup » https://t.me/SenjaaSupport » Lalu ketik /get api atau di web my.telegram.org",
+      "description": "Dapatkan API Hash di Grup » https://t.me/privatedap » Lalu ketik /get api atau di web my.telegram.org",
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » https://t.me/SenjaaSupport » Lalu ketik /get string",
+      "description": "Dapatkan String Session di Grup » https://t.me/privatedap » Lalu ketik /get string",
       "required": true
     },
     "HEROKU_APP_NAME": {
