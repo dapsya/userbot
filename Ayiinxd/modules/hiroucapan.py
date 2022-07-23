@@ -1,6 +1,6 @@
 # © @JustRex Xa-Userbot
 # I took these modules from ultroid and modified them
-# Jangan hapus yg ada tanda # kontol! 
+# Jangan hapus yg ada tanda # kontol!
 # Hiroshi Userbot
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
