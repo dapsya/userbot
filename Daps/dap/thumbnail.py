@@ -22,13 +22,13 @@ async def gen_thumb(thumbnail, title, videoid, ctitle):
         async with session.get(thumbnail) as resp:
             if resp.status == 200:
                 f = await aiofiles.open(
-                    f"AyiinXd/resources/thumb{videoid}.png", mode="wb"
+                    f"Daps/resources/thumb{videoid}.png", mode="wb"
                 )
                 await f.write(await resp.read())
                 await f.close()
     theme = choice(themes)
-    image1 = Image.open(f"AyiinXd/resources/thumb{videoid}.png")
-    image2 = Image.open(f"AyiinXd/resources/{theme}.png")
+    image1 = Image.open(f"Daps/resources/thumb{videoid}.png")
+    image2 = Image.open(f"Daps/resources/{theme}.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
