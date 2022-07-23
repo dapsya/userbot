@@ -2,8 +2,8 @@ import json
 
 import requests
 
-from AyiinXd import BOTLOG_CHATID
-from AyiinXd.ayiin.logger import logging
+from Daps import BOTLOG_CHATID
+from Daps.ayiin.logger import logging
 
 LOGS = logging.getLogger("AyiinUserBot")
 
@@ -31,7 +31,7 @@ async def p_paste(message, extension=None):
             else f"https://pasty.lus.pm/{response['id']}.txt"
         )
         try:
-            from AyiinXd import bot
+            from Daps import bot
 
             await bot.send_message(
                 BOTLOG_CHATID,
