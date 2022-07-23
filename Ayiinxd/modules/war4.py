@@ -64,7 +64,6 @@ async def typewriter(typew):
                         )
 
 
-
 CMD_HELP.update(
     {
         "war4": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: {cmd}ykk\

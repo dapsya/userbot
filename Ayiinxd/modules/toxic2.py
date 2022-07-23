@@ -3,12 +3,13 @@
 
 
 from platform import uname
-from userbot import ALIVE_NAME, CMD_HELP, CMD_HANDLER, bot
+from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
+
 
 @register(outgoing=True, pattern='^.p(?: |$)(.*)')
 async def typewriter(typew):
@@ -116,7 +117,6 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GC SAMPAH KAYA GINI, BUBARIN AJA PLIS!!🤣**")
-    
 
 
 CMD_HELP.update({
