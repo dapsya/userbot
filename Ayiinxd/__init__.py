@@ -722,7 +722,7 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Senja - Userbot",
+                    description="Repository Daps - userbot",
                     url="https://t.me/privatedap",
                     thumb=InputWebDocument(
                         INLINE_PIC,
