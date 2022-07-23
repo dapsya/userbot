@@ -19,7 +19,7 @@ from telethon.tl.functions.channels import CreateChannelRequest, EditPhotoReques
 from telethon.tl.types import ChatPhotoEmpty, InputChatUploadedPhoto
 from telethon.utils import get_peer_id
 
-from AyiinXd import (
+from Daps import (
     BOT_TOKEN,
     BOTLOG_CHATID,
     CMD_HELP,
@@ -154,7 +154,7 @@ async def autobot():
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_file(bf, "AyiinXd/resources/20220613_050648.jpg")
+            await bot.send_file(bf, "Daps/resources/20220613_050648.jpg")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
@@ -167,7 +167,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Iamsenja ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @itsdaps ✨"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -211,7 +211,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Iamsenja ✨"
+            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @itsdaps ✨"
         )
         await bot.send_message(
             BOTLOG_CHATID,
