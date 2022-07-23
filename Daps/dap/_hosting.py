@@ -5,9 +5,9 @@
 # PLease read the GNU Affero General Public License in
 # <https://github.com/TeamUltroid/pyUltroid/blob/main/LICENSE>.
 #
-# Ported by @AyiinXd
-# FROM Ayiin-Userbot <https://github.com/AyiinXd/Ayiin-Userbot>
-# t.me/AyiinXdSupport & t.me/AyiinSupport
+# Ported by @dapsya
+# FROM Ayiin-Userbot <https://github.com/dapsya/userbot>
+# t.me/privatedap & t.me/AyiinSupport
 
 import os
 
